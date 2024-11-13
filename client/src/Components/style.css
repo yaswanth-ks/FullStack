@@ -1,0 +1,69 @@
+/* Start.css */
+.start-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../../public/Images/k.jpg') center center no-repeat;
+    background-size: cover; /* Ensure the image covers the full container */
+    background-color: #f4f7fc; /* Light background fallback */
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.85); /* Slightly transparent white background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.login-btn {
+    width: 48%; /* Make buttons evenly spaced */
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.employee-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.admin-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+.login-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.login-btn:active {
+    transform: translateY(2px);
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Stack the buttons vertically on smaller screens */
+    }
+}
